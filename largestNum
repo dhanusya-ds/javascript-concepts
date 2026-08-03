@@ -1,0 +1,14 @@
+// Math.max()
+let numbers = [10, 45, 22, 89, 67];
+let largest = Math.max(...numbers);
+console.log(largest);
+
+// func
+let num = [10, 45, 22, 89, 67];
+let larg = num[0];
+for (let i = 1; i < num.length; i++) {
+    if (num[i] > larg) {
+        larg = num[i];
+    }
+}
+console.log(larg);
