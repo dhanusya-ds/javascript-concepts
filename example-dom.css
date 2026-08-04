@@ -1,0 +1,16 @@
+body{
+    font-family: Arial;
+}
+
+button{
+    margin:5px;
+    padding:10px;
+}
+
+.red{
+    color:red;
+}
+
+.big{
+    font-size:40px;
+}
