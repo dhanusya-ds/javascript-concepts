@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Javascripts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadEvent()" 
+    onresize="resizeEvent()"
+    onbeforeunload="beforeUnload()">
+    <h1 id="heading">Javascripts Events</h1>
+    <input type="text" id="inputBox" placeholder="Type Something">
+
+    <br><br>
+    <!-- Mouse -->
+    <button onclick="clickEvent()">Click</button>
+    <button ondblclick="doubleClickEvent()">Double Click</button>
+    <button onmouseover="mouseOverEvent()">Mouse Over</button>
+    <button onmouseout="mouseOutEvent()">Mouse Out</button>
+    <button onmousedown="mouseDownEvent()">Mouse Down</button>
+    <button onmouseup="mouseUpEvent()">Mouse Up</button>
+    <button onmousemove="mouseMoveEvent()">Mouse Move</button>
+    <button oncontextmenu="rightClickEvent()">Right CLick</button>
+
+    <!-- Keyboard -->
+    <button onkeydown="keyDownEvent()">Key Down</button>
+    <button onkeyup="keyUpEvent()">Key Up</button>
+    <button onkeypress="keyPressEvent()">Key Press</button>
+
+    <br><br>
+    
+    <input
+        type="text"
+        id="keyboard"
+        placeholder="keyboard events"
+        onkeydown="keyDownEvent()" 
+        onkeyup="keyUpEvent()"
+        onkeypress="keyPressEvent()"   
+    >
+
+    <!-- Form -->
+    <input
+        type="text"
+        id="formInput"
+        placeholder="Focus/Blur"
+        onfocus="focusEvent()"
+        onchange="changeEvent()"
+        oninput="inputEvent()"
+        onblur="blurEvent()"
+        >
+
+    <br><br>
+    
+    <form onsubmit="submitEvent(event)" onreset="resetEvent()">
+        <input type ="text" placeholder="Name">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <br><br>
+    <button id="btn">Click Me</button>
+
+    <br><br>
+    <div style="height:2000px"></div>
+    <script src="events.js" ></script>
+</body>
+</html>
